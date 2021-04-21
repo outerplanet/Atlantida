@@ -3,7 +3,7 @@
 <head>
 	<title>404 Not Found</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -15,14 +15,15 @@
 	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#000000">
 	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
 	<script src="https://kit.fontawesome.com/4c1e25a77a.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/bundle.min.js" defer></script>
 </head>
 <body>
 	<header class="header fixed-item">
 		<div class="page-width">
 			<div class="header__wrapper">
-				<a class="header__logo" href="/">
+				<a class="header__logo" href="/" aria-label="Homepage">
 					<img class="header__logo-img" src="img/logo.png" alt="Logo">
 					<p class="header__logo-title">ATLANTIDA</p>
 				</a>
@@ -39,19 +40,28 @@
 				</nav>
 				<div class="header__right">
 					<div class="header__social social">
-						<a class="header__social social-item" href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
-						<a class="header__social social-item" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-						<a class="header__social social-item" href="https://behance.net" target="_blank"><i class="fab fa-behance"></i></a>
+						<a class="header__social social-item" href="https://facebook.com" target="_blank">
+							<i class="fab fa-facebook-square"></i>
+						</a>
+						<a class="header__social social-item" href="https://twitter.com" target="_blank">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a class="header__social social-item" href="https://behance.net" target="_blank">
+							<i class="fab fa-behance"></i>
+						</a>
 					</div>
-					<button class="header__hamburger hamburger__button" aria-label="Open navigation"><i class="fas fa-bars"></i></button>
+					<button class="header__hamburger hamburger__button" aria-label="Open navigation">
+						<i class="fas fa-bars"></i>
+					</button>
 				</div>
 			</div>
 		</div>
 	</header>
 	<section class="error-404">
 		<div class="page-width">
-			<div class="error-404__article fade-up">
-				<h2 class="error-404__title section-title"><span class="error-404__number">404</span><br>Not Found</h2>
+			<div class="error-404__wrapper fade-up">
+				<p class="error-404__number section-title">404</p>
+				<h2 class="error-404__title section-title">Not Found</h2>
 				<p class="error-404__text section-text">The requested page was not found on our server. It doesn't exist or it may have been removed.</p>
 			</div>
 		</div>
@@ -68,17 +78,23 @@
 						<div class="footer__left">
 							<p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
 							<p class="footer__company">ATLANTIDA STUDIO</p>
-							<p class="footer__address">Steven Bernson, Attorney at Law<br>1556 Broadway, suite 416<br>New York, NY, 10120, USA</p>
+							<p class="footer__address">Steven Bernson, Attorney at Law <br> 1556 Broadway, suite 416 <br> New York, NY, 10120, USA</p>
 							<a class="footer__email" href="mailto:elegantflyers@gmail.com">E-mail: elegantflyers@gmail.com</a>
 							<a class="footer__tel" href="tel:+84956654972">+84 956 654 972</a>
 							<div class="footer__social social">
-								<a class="footer__social-item social-item" href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
-								<a class="footer__social-item social-item" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-								<a class="footer__social-item social-item" href="https://behance.net" target="_blank"><i class="fab fa-behance"></i></a>
+								<a class="footer__social-item social-item" href="https://facebook.com" target="_blank">
+									<i class="fab fa-facebook-square"></i>
+								</a>
+								<a class="footer__social-item social-item" href="https://twitter.com" target="_blank">
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a class="footer__social-item social-item" href="https://behance.net" target="_blank">
+									<i class="fab fa-behance"></i>
+								</a>
 							</div>
 						</div>
 						<div class="footer__right">
-							<form class="footer__form" method="post">
+							<form class="footer__form" action="#" method="post">
 								<input class="footer__form-input" type="text" name="name" placeholder="Name*" required>
 								<input class="footer__form-input" type="email" name="email" placeholder="E-mail*" required>
 								<input class="footer__form-input" type="tel" name="tel" placeholder="Telephone*" required>
@@ -108,6 +124,5 @@
 			</nav>
 		</div>
 	</div>
-	<script src="js/script.js"></script>
 </body>
 </html>
