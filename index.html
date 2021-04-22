@@ -233,23 +233,29 @@
 		</section>
 		<section class="portfolio" id="portfolio">
 			<div class="portfolio__wrapper tab">
-				<div class="page-width">
+				<div class="page-width accordion">
 					<div class="portfolio__article fade-up">
 						<h2 class="portfolio__title section-title">PORTFOLIO</h2>
 						<p class="portfolio__text section-text">Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.</p>
 					</div>
-					<div class="portfolio__buttons fade-up">
-						<button class="portfolio__button1 portfolio__button tab__button tab__button--active">ALL</button>
-						<button class="portfolio__button2 portfolio__button tab__button">WEBSITE</button>
-						<button class="portfolio__button3 portfolio__button tab__button">BROCHURES</button>
-						<button class="portfolio__button4 portfolio__button tab__button">LOGOS</button>
+					<a class="portfolio__accordion-button accordion__button" href="javascript:void(0)">
+						<p class="portfolio__accordion-button-text accordion__button-text">ALL</p>
+						<i class="portfolio__accordion-button-icon accordion__button-icon fas fa-chevron-down"></i>
+					</a>
+					<div class="portfolio__buttons accordion__wrapper">
+						<div class="portfolio__buttons-wrapper fade-up">
+							<button class="portfolio__button1 portfolio__button tab__button tab__button--active">ALL</button>
+							<button class="portfolio__button2 portfolio__button tab__button">WEBSITE</button>
+							<button class="portfolio__button3 portfolio__button tab__button">BROCHURES</button>
+							<button class="portfolio__button4 portfolio__button tab__button">LOGOS</button>
+						</div>
 					</div>
 				</div>
 				<div class="portfolio__images-container fade-up">
-					<img class="portfolio__images tab__item tab__item--active" src="img/portfolio-images.jpg" alt="Portfolio images">
-					<img class="portfolio__images tab__item" src="img/portfolio-img1.jpg" alt="Portfolio image">
-					<img class="portfolio__images tab__item" src="img/portfolio-img2.jpg" alt="Portfolio image">
-					<img class="portfolio__images tab__item" src="img/portfolio-img3.jpg" alt="Portfolio image">
+					<img class="portfolio__img tab__item tab__item--active" src="img/portfolio-images.jpg" alt="Portfolio images">
+					<img class="portfolio__img tab__item" src="img/portfolio-img1.jpg" alt="Portfolio image">
+					<img class="portfolio__img tab__item" src="img/portfolio-img2.jpg" alt="Portfolio image">
+					<img class="portfolio__img tab__item" src="img/portfolio-img3.jpg" alt="Portfolio image">
 				</div>
 			</div>
 		</section>
